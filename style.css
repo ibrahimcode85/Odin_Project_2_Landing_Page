@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: space-between; /* to make header and footer at the top/bottom respectively.*/
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Header {
@@ -45,6 +46,7 @@ body {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding-top: 20px;
 }
 .Content1 {
     display: flex;
@@ -95,20 +97,22 @@ body {
 }
 
 .Content4 {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
 }
 
 .box_content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
     background-color: #3882f6;
     color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 800px;
+    height: 100px;
 }
 
 
@@ -148,24 +152,34 @@ button {
 }
 
 img {
-    border: 5px solid #3882f6;
+    border: 2px solid #3882f6;
     border-radius: 8px;
 }
 
 .Quote_text {
-    width: 900px;
+    max-width: 700px; /*use max width so that when full page it is set at 700px,
+                        but when windows is shrink, the flex item size is auto adjust.*/
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .Quote_name {
     display: flex;
     justify-content: flex-end;
-    width: 900px;
+    min-width: 700px;
     font-size: 20px;
     font-weight: bold;
     color: #1F2937;
     padding: 10px;
+}
+
+.Title3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Content4 button {
+    border: 1px solid white;
 }
