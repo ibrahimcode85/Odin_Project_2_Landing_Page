@@ -60,36 +60,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 5px solid green; 
-    /* flex: 1;  */
-    margin: 0;
 }
 .Content2 {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .Card_container {
-    border: 1px solid green;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
 }
 .Card {
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 18px;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.Content3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.Content3 {
-    border: 1px solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #E5E7EB;
+    gap: 10px;
 }
 
 .Content4 {
@@ -145,3 +147,25 @@ button {
 
 }
 
+img {
+    border: 5px solid #3882f6;
+    border-radius: 8px;
+}
+
+.Quote_text {
+    width: 900px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding: 10px;
+}
+
+.Quote_name {
+    display: flex;
+    justify-content: flex-end;
+    width: 900px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1F2937;
+    padding: 10px;
+}
