@@ -1,23 +1,69 @@
 body {
+    min-height: 100vh; /* max viewpoint height to make it full page.*/
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* to make header and footer at the top/bottom respectively.*/
+    margin: 0;
 }
 
 .Header {
-    border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1F2937;
+    color: white;
 }
 
-.Content1 {
-    border: 1px solid blue;
+.Logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.Left_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 450px;
     gap: 10px;
 }
 
+.Left_container .Subtext {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.Title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.Title2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.Content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #1F2937;
+    color: white;
+    padding: 25px;
+}
+
+.center_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid green; 
+    /* flex: 1;  */
+    margin: 0;
+}
 .Content2 {
     border: 1px solid blue;
     display: flex;
@@ -51,6 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 .box_content {
@@ -58,6 +105,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color: #3882f6;
+    color: white;
 }
 
 
@@ -65,14 +114,34 @@ ul {
     display: flex;
     list-style: none;
     gap: 10px;
+    margin-right: 10px;
 }
 
 a {
     text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
 }
+
 .Footer {
     border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    height: 50px;
+    margin: 0;
 }
+
+button {
+    background-color: #3882f6;
+    font-size: 15px;
+    padding: 8px 16px;
+    color: white;
+    border: 1px solid #3882f6;
+    border-radius: 8px; /*this makes the button rounder.*/
+    cursor: pointer; /*make it a pointer when hover on the button*/
+
+}
+
